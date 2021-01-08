@@ -8,42 +8,30 @@ Brian Mathias Pesci Juliani
 
 # Índice
 <!-- TABLE OF CONTENTS -->
-<details open="open">
   <ol>
-    <li>
-      <a href="#historia">Historia</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+    <li><a href="#introduccion">Introducción</a></li>
+    <li><a href="#desarrollo">Desarrollo</a>
+      <ul><a href="#historia">Historia</a></ul>
+      <ul><a href="#que-es">Qué es</a></ul>
+      <ul><a href="#como-funciona">Cómo funciona</a></ul>
+      <ul><a href="#ejemplos">Ejemplos</a></ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#conclusion">Conclusión</a></li>
+  
   </ol>
-</details>
-
+[Bibliografia](#bibliografia)
 # Introducción 
 
 # Desarrollo 
 
 * <h2 id ="historia"> Historia </h2>
-* Qué es
-* Cómo funciona
-* Ejemplos
+* <h2 id="que-es"> Qué es </h2>
+* <h2 id="como-funciona"> Cómo funciona </h2>
+* <h2 id="ejemplos"> Ejemplos </h2>
 
 # Conclusión 
 
-# Bibliografía.
+# Bibliografia
 
 Como instalarlo: https://guide.elm-lang.org/architecture/
 Documentación: https://guide.elm-lang.org/install/elm.html
