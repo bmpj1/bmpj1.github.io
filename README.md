@@ -19,15 +19,18 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
   </ol>
 
 # Introducción 
+
 Aquí va una pequeña introducción del tema a tratar .
 
 # Desarrollo 
+
 * <h2 id ="historia"> Historia </h2>
 * <h2 id="que-es"> Qué es </h2>
 * <h2 id="como-funciona"> Cómo funciona </h2>
 * <h2 id="ejemplos"> Ejemplos </h2>
 
 # Conclusión 
+
 Breve resumen de lo explicado antes y conclusión.
 
 # Bibliografía
