@@ -19,10 +19,23 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
   </ol>
 
 # Introducción 
-Aquí va una pequeña introducción del tema a tratar.
+El lenguaje de programación Elm, está orientado a navegadores web y nos permite
+crear interfaces gráficas de usuario. Elm es un lenguaje desarrollado con 
+énfasis en la usabilidad, el rendimiento y la robustez. Además, es un
+lenguaje funcional puro y fuertemente tipificado. Por tanto, se proclama
+como un lenguaje sin fallos en la práctica. <br>
 
 # Desarrollo 
-* <h2 id ="historia"> Historia </h2>
+## Historia 
+Evan Czaplicki diseño en 2012 la versión inicial de Elm como resultado
+de su tesis. Poco después aparecería la primera versión pública,
+dotada de ejemplos abundantes y un editor en línea.<br>
+En 2013, Evan Czaplicki se unió a la empresa Prezi con la idea de 
+seguir desarrollando el lenguaje de programación Elm.<br>
+En 2016, NoRedInk incorporo en sus filas a Evan como Ingeniero de 
+Software para trabajar con código libre, seguir con el proyecto y la creación 
+de la [Elm Software Foundation](https://elm-lang.org/news/new-adventures-for-elm).<br>
+
 * <h2 id="que-es"> Qué es </h2>
 * <h2 id="como-funciona"> Cómo funciona </h2>
 * <h2 id="ejemplos"> Ejemplos </h2>
