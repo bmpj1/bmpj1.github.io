@@ -10,9 +10,9 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#desarrollo">Desarrollo</a>
       <ul><a href="#historia">Historia</a></ul>
-      <ul><a href="#que-es">Qué es</a></ul>
-      <ul><a href="#como-funciona">Cómo funciona</a></ul>
-      <ul><a href="#ejemplos">Ejemplos</a></ul>
+      <ul><a href="#elm">Qué es</a></ul>
+      <ul><a href="#instalación">Cómo funciona</a></ul>
+      <ul><a href="#código">Ejemplos</a></ul>
     </li>
   <li><a href="#conclusión">Conclusión</a></li>
   <li><a href="#bibliografía">Bibliografía</a></li>
