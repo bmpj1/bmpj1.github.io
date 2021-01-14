@@ -8,7 +8,7 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
 <!-- TABLE OF CONTENTS -->
   <ol>
     <li>[Introducción](#introduccion)</li>
-    <li>[Desarrollo](#desarrollo)</li>
+    <li>[Desarrollo](#desarrollo)
       <ul><a href="#historia">Historia</a></ul>
       <ul><a href="#que-es">Qué es</a></ul>
       <ul><a href="#como-funciona">Cómo funciona</a></ul>
