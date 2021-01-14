@@ -7,15 +7,15 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
 # Índice
 <!-- TABLE OF CONTENTS -->
   <ol>
-    <li>[Introducción](#Introducción)</li>
-    <li>[Desarrollo](#Desarrollo)
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#desarrollo">Desarrollo</a>
       <ul><a href="#historia">Historia</a></ul>
       <ul><a href="#que-es">Qué es</a></ul>
       <ul><a href="#como-funciona">Cómo funciona</a></ul>
       <ul><a href="#ejemplos">Ejemplos</a></ul>
     </li>
-  <li>[Conclusión](#conclusión)</li>
-  <li>[Bibliografía](#bibliografía)</li>
+  <li><a href="#conclusión">Conclusión</a></li>
+  <li><a href="#bibliografía">Bibliografía</a></li>
   </ol>
 
 # Introducción 
