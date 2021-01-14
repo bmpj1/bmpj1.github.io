@@ -27,13 +27,13 @@ como un lenguaje sin fallos en la práctica. <br>
 
 # Desarrollo 
 ## Historia 
-Evan Czaplicki diseño en 2012 la versión inicial de Elm como resultado
+Evan Czaplicki diseñó en 2012 la versión inicial de Elm como resultado
 de su tesis. Poco después aparecería la primera versión pública,
 dotada de ejemplos abundantes y un editor en línea.<br>
 En 2013, Evan Czaplicki se unió a la empresa Prezi con la idea de 
 seguir desarrollando el lenguaje de programación Elm.<br>
 En 2016, NoRedInk incorporo en sus filas a Evan como Ingeniero de 
-Software para trabajar con código libre, seguir con el proyecto y la creación 
+Software para trabajar con código libre, seguir con el proyecto Elm y la creación 
 de la [Elm Software Foundation](https://elm-lang.org/news/new-adventures-for-elm).<br>
 
 * <h2 id="que-es"> Qué es </h2>
