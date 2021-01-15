@@ -13,9 +13,10 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
       <ul><a href="#elm-como-lenguaje-de-programación">Elm como lenguaje de programación</a></ul>
       <ul>
         <a href="#instalación-y-puesta-en-marcha">Instalación y puesta en marcha</a>
-        <ul><a href="#embedding-en-html">Embedding en HTML</a></ul>
-        <ul><a href="#flags">Flags</a></ul>
-        <ul><a href="#puertos">Puertos</a></ul>
+        <li>
+          <ul><a href="#embedding-en-html">Embedding en HTML</a></ul>
+          <ul><a href="#flags">Flags</a></ul>
+          <ul><a href="#puertos">Puertos</a></ul>
       </ul>
       <ul><a href="#código-y-ejemplos">Código y ejemplos</a></ul>
     </li>
@@ -148,62 +149,62 @@ $ elm make src/Main.elm --optimize --output=elm.js
  ```
  <p>Al hacer esto, estamos agregando las dependencias en tu archivo "elm.json", haciendo que estos paquetes estén disponibles en tu proyecto. Esto te permitirá escribir "import Http..." y usar funciones como Http.get en tus programas.</p>
  
- ## Embedding en HTML
- <p>Una vez que hemos compilado nuestro .js con:</p>
- 
- ```shell
- $ elm make src/Main.elm --output=main.js
- ```
- 
- <p>Y hemos instalado el paquete, podemos agregarlo a un archivo .HTML y llamar a sus funciones como en el siguiente ejemplo:</p>
+## Embedding en HTML
+<p>Una vez que hemos compilado nuestro .js con:</p>
+
+```shell
+$ elm make src/Main.elm --output=main.js
+```
+
+<p>Y hemos instalado el paquete, podemos agregarlo a un archivo .HTML y llamar a sus funciones como en el siguiente ejemplo:</p>
+
+```html
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="myapp"></div>
+  <script>
+  var app = Elm.Main.init({
+    node: document.getElementById('myapp')
+  });
+  </script>
+</body>
+</html>
+```
+
+## Flags
+<p>En elm, los Flags son una manera de pasar valores en la inicialización de Elm. Algunos usos comunes de los Flags son el paso de API keys, variables de entorno, datos de usuario, etc... </p>
+<p>Para utilizar los Flags lo primero es editar el html y dejar el script de la siguiente manera:</p>
 
 ```html
   <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Main</title>
-    <script src="main.js"></script>
-  </head>
+    <head>
+      <meta charset="UTF-8">
+      <title>Main</title>
+      <script src="main.js"></script>
+    </head>
 
-  <body>
-    <div id="myapp"></div>
-    <script>
-    var app = Elm.Main.init({
-      node: document.getElementById('myapp')
-    });
-    </script>
-  </body>
+    <body>
+      <div id="myapp"></div>
+      <script>
+      var app = Elm.Main.init({
+        node: document.getElementById('myapp'),
+        flags: Date.now()
+      });
+      </script>
+    </body>
   </html>
 ```
-  
-  ## Flags
-  <p>En elm, los Flags son una manera de pasar valores en la inicialización de Elm. Algunos usos comunes de los Flags son el paso de API keys, variables de entorno, datos de usuario, etc... </p>
-  <p>Para utilizar los Flags lo primero es editar el html y dejar el script de la siguiente manera:</p>
-  
-  ```html
-    <html>
-      <head>
-        <meta charset="UTF-8">
-        <title>Main</title>
-        <script src="main.js"></script>
-      </head>
+<p>Para manejar los flags desde Elm, modificamos la función init del .elm</p>
 
-      <body>
-        <div id="myapp"></div>
-        <script>
-        var app = Elm.Main.init({
-          node: document.getElementById('myapp'),
-          flags: Date.now()
-        });
-        </script>
-      </body>
-    </html>
-  ```
-  <p>Para manejar los flags desde Elm, modificamos la función init del .elm</p>
-  
-  ## Puertos
-  <p>En Elm, los puertos permiten la comunicación entre Elm y JavaScript. Los puertos son comunmente usados para los WebSockets y el localStorage.</p>
-  <p>En Elm, los puertos crean fuertes dependencias, por lo que no es recomendado que se utilicen para cualquier función JS.</p>
+## Puertos
+<p>En Elm, los puertos permiten la comunicación entre Elm y JavaScript. Los puertos son comunmente usados para los WebSockets y el localStorage.</p>
+<p>En Elm, los puertos crean fuertes dependencias, por lo que no es recomendado que se utilicen para cualquier función JS.</p>
   
 ## Código y ejemplos
 <p>Ahora veamos un ejemplo real del lenguaje de programación Elm.<br>
