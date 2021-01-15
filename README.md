@@ -47,18 +47,19 @@ gestor de paquetes, depurador con viaje en el tiempo, e instaladores para Linux,
 Elm también tiene un ecosistema de librerías creadas por la comunidad y un editor en 
 línea avanzado que permite incluir dichas librerías y guardar el código para compartirlo.<br>
        
-CARACTERISTICAS:Elm tiene un pequeño pero expresivo conjunto de funcionalidades en el lenguaje, 
+**Características**<br>
+Elm tiene un pequeño pero expresivo conjunto de funcionalidades en el lenguaje, 
 incluyendo expresiones if, creación de variables locales, y expresiones case para 
 la búsqueda de patrones. Como lenguaje funcional, tiene funciones anónimas, funciones como 
 argumentos, y aplicación parcial (currificación) por defecto. Su semántica incluye valores inmutables, 
 funciones puras, y tipado estático con inferencia de tipos. Los programas de Elm producen HTML a 
 través de un sistema de DOM virtual, y pueden interoperar con otro código Javascript.<br>
 
-Inmutabilidad
+**Inmutabilidad**
 Todos los valores en Elm son inmutables, un valor no puede ser modificado después de ser creado. 
 Elm utiliza estructuras de datos persistentes para implementar sus librerías Array, Dict, y Set.<br>
 
-Tipos estáticos
+**Tipos estáticos**
 Elm usa un sistema de tipado estático. Las anotaciones de tipos son opcionales, debido a 
 la inferencia de tipos, pero recomendadas. Las anotaciones se ponen en la línea de arriba de 
 la definición (no como en los lenguajes de la familia de C, donde los tipos y los nombres de 
@@ -82,7 +83,7 @@ la librería estándar de Elm define un tipo Maybe a . El código que produce o 
 opcionales lo hace utilizando explícitamente este tipo, y todo el código tiene garantías de 
 que el valor que dice ser de un cierto tipo esta garantizado tener un valor de ese tipo presente.<br>
 
-Sistema de módulos	
+**Sistema de módulos**	
 Elm tiene un sistema de módulos que permite a los usuarios dividir el código en partes 
 más pequeñas llamadas módulos. Los módulos pueden esconder detalles de implementación, 
 tales como funciones auxiliares, y agrupar código relacionado. Los módulos sirven como espacio 
@@ -92,7 +93,7 @@ Todos los paquetes y librerías se versionan utilizando versionado semántico, q
 verificado y hecho cumplir por el compilador y otras herramientas. Esto significa, que quitar 
 una función, o cambiar su tipo, puede ser hecho solo incrementando la versión mayor.<br>
 
-Interoperabilidad con HTML, CSS y JavaScript
+**Interoperabilidad con HTML, CSS y JavaScript**
 Elm utiliza una abstracción llamada ports (puertos) para comunicarse con JavaScript. Permite que los 
 valores fluyan hacia dentro y fuera de los programas Elm, haciendo posible la comunicación 
 entre Elm y JavaScript.<br>
@@ -207,7 +208,7 @@ $ elm make src/Main.elm --output=main.js
 <p>Ahora veamos un ejemplo real del lenguaje de programación Elm.<br>
 Con el objetivo de crear una página web donde poder visualizar gifs de gatos.</p>
 
-Comenzamos por lo básico *Imports* y *Main*.<br>
+Comenzamos por lo básico Imports y Main.<br>
 ```elm 
 import Browser
 import Html exposing (..)
@@ -228,8 +229,9 @@ main =
 
 ````
 
-<p>Continuamos con *Model* que será donde guardemos la información de nuestra aplicación.<br>
-Model es para Elm lo que es *state* para Vue o Angular</p>
+<p>
+Continuamos con Model que será donde guardemos la información de nuestra aplicación.<br>
+Model es para Elm lo que es state para Vue o Angular</p>
 
 ```elm
 -- MODEL
@@ -246,7 +248,7 @@ init _ =
 
 ```
 
-<p>Seguimos con *Update* que será el encargado de mutar la información del modelo.<br>
+<p>Seguimos con Update que será el encargado de mutar la información del modelo.<br>
 Update es para Elm lo que mutations para Vue.</p>
 
 ```elm
@@ -273,8 +275,8 @@ update msg model =
 
 ```
 
-<p>*Subscriptions* se encarga de disparar el evento cuando pinchamos en un botón.<br>
-Por otro lado, *View* transforma la información de la aplicación en html para que el navegador lo interprete.</p>
+<p>Subscriptions se encarga de disparar el evento cuando pinchamos en un botón.<br>
+Por otro lado, View transforma la información de la aplicación en html para que el navegador lo interprete.</p>
 
 ```elm
 -- SUBSCRIPTIONS
@@ -336,10 +338,21 @@ gifDecoder =
 [Ejemplo CatGifs](https://elm-lang.org/examples/cat-gifs)
 
 # Conclusión 
-Breve resumen de lo explicado antes y conclusión.
+Para tener un resumen general de esta documentación y de la arquitectura Elm podemos concluir lo siguiente.
+El lenguaje de programación Elm surgio con la necesidad de mejorar el mundo web y traspasar al front-end 
+parte de la aplicación final.<br>
+Por ello, se nota hoy dia (2021) que es un lenguaje viejo, díficil de empezar a usarlo; pero a su vez, ideal para entender 
+como funciona la programación web (HTML, CSS o JavaScript). Su sintaxis es compleja al inicio, pero a su vez Elm es claro y escueto 
+a la hora de crear una nueva página web sencilla. Un proyecto  a gran escala, ya sería un tanto imposible. 
+Sin alardes, Elm consigue sus máximas: ser usable, rápido y robusto.
 
 # Bibliografía
 Como instalarlo: https://guide.elm-lang.org/architecture/
 Documentación: https://guide.elm-lang.org/install/elm.html
+Explicación código: https://elmprogramming.com/subscriptions.html
+Código y ejemplos: https://elm-lang.org/examples
+Wikipedia Elm: https://es.wikipedia.org/wiki/Elm_(lenguaje_de_programaci%C3%B3n)
+Markdown: https://www.markdownguide.org/basic-syntax/
+GuiHub: https://github.com/
 
 
