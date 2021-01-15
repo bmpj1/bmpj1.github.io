@@ -96,7 +96,54 @@ entre Elm y JavaScript.<br>
 
 Elm tiene una librería llamada elm-html que un programador puede utilizar para escribir HTML y CSS en Elm.
 Utiliza un sistema de DOM virtual para hacer las actualizaciones en la página más eficientes.<br>
+
 ## Instalación y puesta en marcha
+* Instalar ELM con instalador en windows: https://github.com/elm/compiler/releases/download/0.19.1/installer-for-windows.exe
+* Instalar ELM con instalador en Mac: https://github.com/elm/compiler/releases/download/0.19.1/installer-for-mac.pkg
+* Instalar ELM en Linux: https://github.com/elm/compiler/blob/master/installers/linux/README.md
+```shell
+$ cd ~/Desktop/
+$ curl -L -o elm.gz https://github.com/elm/compiler/releases/download/0.19.1/binary-for-linux-64-bit.gz
+$ gunzip elm.gz
+$ chmod +x elm
+$ sudo mv elm /usr/local/bin/
+$ elm --help
+```
+**Iniciar un proyecto ELM:**
+```shell
+$ elm init
+```
+Este comando crea un elm.json y el directorio src/ donde:
+  * **elm.json** describe tu proyecto
+  * **src/** contiene todos tus archivos .elm
+<br>
+<p>Una vez creado el proyecto podemos proceder a crear nuestro primer archivo Hello.elm y agregar el siguiente código de ejemplo:</p>
+
+```elm
+import Html exposing (text)
+
+main =
+  text "Hello!"
+```
+<p>Una vez creado el archivo, podemos proceder a compilarlo y generar un .html o .js con los siguientes comandos:</p>
+
+```shell
+# Create an index.html file that you can open in your browser.
+$ elm make src/Main.elm
+
+# Create an optimized JS file to embed in a custom HTML document.
+$ elm make src/Main.elm --optimize --output=elm.js
+```
+<p>Esta es la manera más general de compilar código .elm. Es extremadamente útil una vez que tu proyecto se vuelve muy avanzado.</p>
+<p>Una vez compilado, podemos instalar los paquetes, los cuales se registran en "package.elm-lang.org". Para ello, ejecutamos los siguientes comandos (en función de que necesitemos realizar peticiones http o json):</p>
+  
+ ```shell
+ $ elm install elm/http
+ $ elm install elm/json
+ ```
+ <p>Al hacer esto, estamos agregando las dependencias en tu archivo "elm.json", haciendo que estos paquetes estén disponibles en tu proyecto. Esto te permitirá escribir "import Http..." y usar funciones como Http.get en tus programas.</p>
+ 
+  
 ## Código y ejemplos
 
 # Conclusión 
