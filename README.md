@@ -10,8 +10,8 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#desarrollo">Desarrollo</a>
       <ul><a href="#historia">Historia</a></ul>
-      <ul><a href="#elm">Elm como lenguaje de programación</a></ul>
-      <ul><a href="#instalación">Instalación y puesta en marcha</a></ul>
+      <ul><a href="#elm-como-lenguaje-de-programación">Elm como lenguaje de programación</a></ul>
+      <ul><a href="#instalación-y-puesta-en-marcha">Instalación y puesta en marcha</a></ul>
       <ul><a href="#código">Código y ejemplos</a></ul>
     </li>
   <li><a href="#conclusión">Conclusión</a></li>
