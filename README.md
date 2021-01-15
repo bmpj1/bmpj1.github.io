@@ -15,6 +15,7 @@ Aplicaciones Distribuídas en Internet, Universidad de Alicante, curso 2020/21.
         <a href="#instalación-y-puesta-en-marcha">Instalación y puesta en marcha</a>
         <ul><a href="#embedding-en-html">Embedding en HTML</a></ul>
         <ul><a href="#flags">Flags</a></ul>
+        <ul><a href="#puertos">Puertos</a></ul>
       </ul>
       <ul><a href="#código-y-ejemplos">Código y ejemplos</a></ul>
     </li>
@@ -55,11 +56,11 @@ argumentos, y aplicación parcial (currificación) por defecto. Su semántica in
 funciones puras, y tipado estático con inferencia de tipos. Los programas de Elm producen HTML a 
 través de un sistema de DOM virtual, y pueden interoperar con otro código Javascript.<br>
 
-Inmutabilidad	Editar
+Inmutabilidad
 Todos los valores en Elm son inmutables, un valor no puede ser modificado después de ser creado. 
 Elm utiliza estructuras de datos persistentes para implementar sus librerías Array, Dict, y Set.<br>
 
-Tipos estáticos	Editar
+Tipos estáticos
 Elm usa un sistema de tipado estático. Las anotaciones de tipos son opcionales, debido a 
 la inferencia de tipos, pero recomendadas. Las anotaciones se ponen en la línea de arriba de 
 la definición (no como en los lenguajes de la familia de C, donde los tipos y los nombres de 
@@ -83,7 +84,7 @@ la librería estándar de Elm define un tipo Maybe a . El código que produce o 
 opcionales lo hace utilizando explícitamente este tipo, y todo el código tiene garantías de 
 que el valor que dice ser de un cierto tipo esta garantizado tener un valor de ese tipo presente.<br>
 
-Sistema de módulos	Editar
+Sistema de módulos	
 Elm tiene un sistema de módulos que permite a los usuarios dividir el código en partes 
 más pequeñas llamadas módulos. Los módulos pueden esconder detalles de implementación, 
 tales como funciones auxiliares, y agrupar código relacionado. Los módulos sirven como espacio 
@@ -93,7 +94,7 @@ Todos los paquetes y librerías se versionan utilizando versionado semántico, q
 verificado y hecho cumplir por el compilador y otras herramientas. Esto significa, que quitar 
 una función, o cambiar su tipo, puede ser hecho solo incrementando la versión mayor.<br>
 
-Interoperabilidad con HTML, CSS y JavaScript	Editar
+Interoperabilidad con HTML, CSS y JavaScript
 Elm utiliza una abstracción llamada ports (puertos) para comunicarse con JavaScript. Permite que los 
 valores fluyan hacia dentro y fuera de los programas Elm, haciendo posible la comunicación 
 entre Elm y JavaScript.<br>
@@ -179,9 +180,30 @@ $ elm make src/Main.elm --optimize --output=elm.js
   <p>En elm, los Flags son una manera de pasar valores en la inicialización de Elm. Algunos usos comunes de los Flags son el paso de API keys, variables de entorno, datos de usuario, etc... </p>
   <p>Para utilizar los Flags lo primero es editar el html y dejar el script de la siguiente manera:</p>
   
+  ```html
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Main</title>
+        <script src="main.js"></script>
+      </head>
+
+      <body>
+        <div id="myapp"></div>
+        <script>
+        var app = Elm.Main.init({
+          node: document.getElementById('myapp'),
+          flags: Date.now()
+        });
+        </script>
+      </body>
+    </html>
   ```
-  ```
+  <p>Para manejar los flags desde Elm, modificamos la función init del .elm</p>
   
+  ## Puertos
+  <p>En Elm, los puertos permiten la comunicación entre Elm y JavaScript. Los puertos son comunmente usados para los WebSockets y el localStorage.</p>
+  <p>En Elm, los puertos crean fuertes dependencias, por lo que no es recomendado que se utilicen para cualquier función JS.</p>
   
 ## Código y ejemplos
 <p>Ahora veamos un ejemplo real del lenguaje de programación Elm.<br>
@@ -313,7 +335,7 @@ gifDecoder =
 
 ```
 
-faltaria una imagen o algo de la página funcionando y un enlace a la pagina original
+[Ejemplo CatGifs](https://elm-lang.org/examples/cat-gifs)
 
 # Conclusión 
 Breve resumen de lo explicado antes y conclusión.
